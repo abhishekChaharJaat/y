@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/script/menu-bar.js"></script>
+
+    <!---------------------------- Google Fonts ----------------------------->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!---------------------------- Icons Fonts Awsome ----------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <!-------------------------------- Mobile Nav ------------------------------------------>
+    <div class="container">
+      <div class="phone-nav">
+        <div class="side-bar" id="side-nav-bar">
+          <ul class="nav-ul-mob">
+            <i
+              class="fa fa-times"
+              onclick="hide()"
+              id="cross-icon"
+              aria-hidden="true"
+            ></i>
+            <li>
+              <a href="index.html">Home </a>
+            </li>
+            <li>
+              <a href="mywork.html">MyWork </a>
+            </li>
+            <li>
+              <a href="#about-us">About </a>
+            </li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+              <a href="#gallery">Gallery </a>
+            </li>
+            <li>
+              <a href="#contact-us">Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- Nav ------------------------------------------>
+    <div class="container">
+      <div class="nav">
+        <img src="/images/chaharlogo.png" class="chahar-logo" />
+        <ul class="nav-ul">
+          <li>
+            <a href="mywork.html">MyWork </a>
+          </li>
+          <li>
+            <a href="#about-us">About </a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery </a>
+          </li>
+          <li>
+            <a href="#contact-us">Contact </a>
+          </li>
+        </ul>
+        <button type="button" class="login-btn">
+          <a href="/" style="text-decoration: none; color: white"> Join </a>
+        </button>
+        <i
+          class="fa fa-bars"
+          id="menu-icon"
+          aria-hidden="true"
+          onclick="show()"
+        ></i>
+      </div>
+
+      <!-------------------------------- Home Banner------------------------------------------>
+
+      <div class="banner">
+        <div class="banner-left">
+          <p class="hello">_______Hello</p>
+          <p class="my-name">
+            I am <span style="color: darkcyan"> Abhishek Chahar Jaat </span>
+          </p>
+          <p class="designation">Web Developer</p>
+          <p class="about-me-text">
+            This is my official portfolio website to show all <br />
+            Details and work experience web development.
+          </p>
+          <button type="button" class="download-cv-btn">Download CV</button>
+          <div class="social-media-accounts">
+            <a
+              href="https://www.facebook.com/abhishek.chahar.9847?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/abhishek-chahar-jaat"
+              target="_blank"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://instagram.com/abhishek_chahar_jaat?igshid=MTF6NmZvcnZuNGZqbg=="
+              target="_blank"
+            >
+              <i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="banner-right">
+          <img src="/images/my-image.jpg" class="my-image" />
+
+          <div class="shape"></div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------- About us ---------------------------------------->
+
+    <div class="container">
+      <div class="about-us" id="about-us">
+        <h2 class="all-head">About us</h2>
+        <p class="about-us-text">
+          I'm Abhishek Chahar Jaat. I'm a tech Geek and a programmer. I live in
+          Mathura, UP Currently, I'm studying Bachelor of Computer Applications
+          at GLA University. I aspire to be a Software Engineer but I keep
+          experimenting with myself working in different fields.
+        </p>
+        <hr />
+      </div>
+    </div>
+
+    <!---------------------------- Education page ---------------------------------------->
+    <div class="container">
+      <div id="education">
+        <h2 class="all-head">
+          Education <i class="fa fa-pencil" aria-hidden="true"></i>
+        </h2>
+        <div class="my-education">
+          <!-- 1 -->
+          <div class="educations">
+            <div>
+              <img src="./images/college.jpg" class="school" />
+            </div>
+            <div>
+              <p class="education-type">
+                Bachelor of Computer Applications(BCA)
+              </p>
+              <p class="place">
+                GLA university. Chaumuhan, Mathura (U.P.) India.
+              </p>
+              <p class="passing-year">
+                <span style="color: blue">Persuing </span>
+              </p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <!-- <div class="educations">
+            <div>
+              <img src="./images/college.jpg" class="school" />
+            </div>
+            <div>
+              <p class="education-type">Bachelor of Arts(B.A)</p>
+              <p class="place">
+                GLA university. Chaumuhan, Mathura (U.P.) India.
+              </p>
+              <p class="passing-year">
+                2019-2022 | <span style="color: blue">Completed </span>
+              </p>
+            </div>
+          </div> -->
+          <!-- 3 -->
+          <div class="educations">
+            <div>
+              <img src="./images/school.jpeg" class="school" />
+            </div>
+            <div>
+              <p class="education-type">Intermediate(10+2)</p>
+              <p class="place">
+                Delhi Public School, Refinary Nagar Township, Mathura
+              </p>
+              <p class="passing-year">
+                <span style="color: blue">Completed </span>
+              </p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="educations">
+            <div>
+              <img src="./images/school.jpeg" class="school" />
+            </div>
+            <div>
+              <p class="education-type">HighSchool</p>
+              <p class="place">
+                Delhi Public School, Refinary Nagar Township, Mathura
+              </p>
+              <p class="passing-year">
+                <span style="color: blue">Completed </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- Skills ----------------------------------------->
+    <div class="container">
+      <div id="skills">
+        <h2 class="all-head">My Skills</h2>
+        <div class="skills">
+          <!-- 1 html -->
+          <div class="html all-lang">
+            <div class="outer-circle">
+              <div class="inner-circle">
+                <p class="percent">0%</p>
+              </div>
+            </div>
+            <p>HTML</p>
+          </div>
+          <!-- 2  css-->
+          <div class="css all-lang">
+            <div class="outer-circle">
+              <div class="inner-circle">
+                <p class="percent">0%</p>
+              </div>
+            </div>
+            <p>CSS</p>
+          </div>
+          <!-- 3 js -->
+          <div class="css all-lang">
+            <div class="outer-circle">
+              <div class="inner-circle">
+                <p class="percent">0%</p>
+              </div>
+            </div>
+            <p>Javascript</p>
+          </div>
+          <!-- 4 react -->
+          <div class="css all-lang">
+            <div class="outer-circle">
+              <div class="inner-circle">
+                <p class="percent">0%</p>
+              </div>
+            </div>
+            <p>React</p>
+          </div>
+          <!-- 5 java -->
+          <div class="css all-lang">
+            <div class="outer-circle">
+              <div class="inner-circle">
+                <p class="percent">0%</p>
+              </div>
+            </div>
+            <p>Java</p>
+          </div>
+          <!-- 5 c-->
+          <div class="css all-lang">
+            <div class="outer-circle">
+              <div class="inner-circle">
+                <p class="percent">0%</p>
+              </div>
+            </div>
+            <p>C</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- Gallery ----------------------------------------->
+
+    <div class="container">
+      <div id="gallery">
+        <h2 class="all-head">Gallery....</h2>
+        <div class="gallery">
+          <div><img src="/images/ach1.jpg" class="img" /></div>
+          <div><img src="/images/java (basics).jpg" class="img" /></div>
+          <div><img src="/images/ach2.jpg" class="img" /></div>
+          <div><img src="/images/ach3.jpg" class="img" /></div>
+          <div><img src="/images/hackathon.jpg" class="img" /></div>
+          <div><img src="/images/ach4.jpg" class="img" /></div>
+          <div><img src="/images/ach2.jpg" class="img" /></div>
+          <div><img src="/images/ach3.jpg" class="img" /></div>
+        </div>
+        <div class="gallery-btn">
+          <span class="left-arrow">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </span>
+          <span class="right-arrow">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- Contact Us ----------------------------------------->
+
+    <div class="container">
+      <div id="contact-us">
+        <h2 class="all-head">Contact</h2>
+        <div class="contact-us">
+          <div class="form-left">
+            <div class="alert">
+              <p>Your form is submitted</p>
+              <button type="ok" id="alertOkBtn">Ok</button>
+            </div>
+            <form class="contact-form" id="contact-form" onsubmit="">
+              <input
+                class="f-input"
+                type="text"
+                placeholder="Your Name"
+                id="name"
+                required
+              />
+              <br />
+              <input
+                class="f-input"
+                type="email"
+                placeholder="Email"
+                id="email"
+                required
+              />
+              <br />
+              <textarea
+                class="f-input"
+                type="text"
+                placeholder="Message....."
+                rows="6"
+                id="msgContent"
+                required
+              ></textarea>
+              <button type="submit" class="submitt-btn">Submitt</button>
+            </form>
+          </div>
+          <div class="form-right">
+            <i class="fa fa-envelope" aria-hidden="true"> Email</i>
+            <i class="fa fa-phone" aria-hidden="true">Call us</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- Footer ----------------------------------------->
+    <div class="container">
+      <div class="footer">
+        <p class="copyright-p">@2023 All Rights Reserved</p>
+      </div>
+    </div>
+    <!--------------------------------- Scripts ----------------------------------------->
+    <script src="/script/my-skills.js"></script>
+
+    <!--------------------------------- Firebase Script ----------------------------------------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="/script/submit-form.js"></script>
+
+    <!---------------------------------Carousel Script ----------------------------------------->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(".gallery").slick({
+        centerMode: true,
+        arrows: true,
+        autoplay: true,
+        prevArrow: ".left-arrow",
+        nextArrow: ".right-arrow",
+        variableWidth: true,
+        slidesToShow: 3,
+
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              variableWidth: true,
+              focusOnSelect: true,
+              infinite: true,
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

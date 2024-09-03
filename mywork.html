@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/mywork.css" />
+    <link rel="stylesheet" href="/css/weather_api.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="/script/index.js"></script>
+    <!--------------------------- Font Awsome 4 link ---------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>MyWork</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top -->
+      <div class="top">
+        <a href="index.html"
+          ><i class="fa fa-arrow-left" aria-hidden="true"></i
+        ></a>
+      </div>
+
+      <!-- Change color -->
+      <div class="box" id="box">
+        <p class="all-headings">1. Color Changer</p>
+        <div class="colors" id="red" onclick="changeColor('#f4aaaa')">Red</div>
+        <div class="colors" id="blue" onclick="changeColor('#5f5fc5')">
+          Blue
+        </div>
+        <div class="colors" id="green" onclick="changeColor('#b2e3b2')">
+          Green
+        </div>
+        <div class="colors" id="yellow" onclick="changeColor('#f4f4ad')">
+          Yellow
+        </div>
+        <div class="colors" id="grey" onclick="changeColor('#aba7a7')">
+          Grey
+        </div>
+      </div>
+
+      <!--------------------------- progress bar -------------------------------------->
+
+      <div class="box2">
+        <p class="all-headings">2. Progress Bar</p>
+
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <p class="percent">0%</p>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- Typed text -------------------------------------->
+
+      <div class="box3" id="demo">
+        <p class="all-headings">3. Auto type</p>
+        <h1 class="typed-text" id="name"></h1>
+      </div>
+
+      <!--------------------------- Counter --------------------------------->
+      <div class="box4" id="demo">
+        <p class="all-headings">4. Counter</p>
+        <div class="counter-circle">
+          <h1 id="number">20</h1>
+        </div>
+        <div class="counter-btn">
+          <button type="button" onclick="cReset()">RESET</button>
+          <button type="button" onclick="cStart()">START</button>
+          <button type="button" onclick="cStop()">STOP</button>
+        </div>
+      </div>
+
+      <!--------------------------- Stop Watch --------------------------------->
+
+      <div class="box5">
+        <p class="all-headings">5. Stop Watch</p>
+        <div class="time">
+          <h1 id="hour">00</h1>
+          <h1>:</h1>
+          <h1 id="min">00</h1>
+          <h1>:</h1>
+          <h1 id="second">00</h1>
+        </div>
+        <div class="stop-watch-btn">
+          <button type="button" onclick="wReset()">RESET</button>
+          <button type="button" onclick="wStart()">START</button>
+          <button type="button" onclick="wStop()">STOP</button>
+        </div>
+      </div>
+
+      <!--------------------------- Clock -------------------------------------->
+
+      <div class="box6">
+        <p class="all-headings">6. Clock</p>
+        <h1 id="clock-hour">00</h1>
+        <h1>:</h1>
+        <h1 id="clock-min">00</h1>
+        <h1>:</h1>
+        <h1 id="clock-sec">00</h1>
+      </div>
+    </div>
+
+    <!--------------------------- 7. Search filter -------------------------------------->
+
+    <div class="container">
+      <div class="box7">
+        <div class="input-div">
+          <h2 style="text-align: center">7. Filter Bar</h2>
+          <input
+            type="text"
+            placeholder="search"
+            id="myInput"
+            onkeyup="search()"
+          />
+        </div>
+        <div class="table-div">
+          <table class="table" id="myTable">
+            <tr>
+              <th>Roll no.</th>
+              <th>Name</th>
+              <th>Course</th>
+            </tr>
+
+            <tr>
+              <td>05</td>
+              <td>Abhishek</td>
+              <td>BCA</td>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>Aabhas</td>
+              <td>BCA</td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>Anushka</td>
+              <td>Btech</td>
+            </tr>
+            <tr>
+              <td>45</td>
+              <td>Daksh</td>
+              <td>MBA</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>harsh</td>
+              <td>BA</td>
+            </tr>
+            <tr>
+              <td>67</td>
+              <td>John</td>
+              <td>Btech</td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td>Gupta</td>
+              <td>MBA</td>
+            </tr>
+            <tr>
+              <td>71</td>
+              <td>Premveer</td>
+              <td>MCA</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------- 8. Music Player -------------------------------------->
+
+    <div class="container">
+      <div class="box8">
+        <div class="music-player">
+          <nav>
+            <div class="circle">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="circle">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+          </nav>
+
+          <img src="./images/sidhu.jpeg" class="song-img" id="song-img" />
+          <h2>Sidhu moosewala</h2>
+          <p>
+            <marquee> Inaam mankirat aulakh - feat sidhu moosewala </marquee>
+          </p>
+
+          <input type="range" id="progress" />
+          <div class="controls">
+            <div>
+              <i
+                class="fa fa-backward"
+                aria-hidden="true"
+                onclick="changeSongPrev()"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa fa-play"
+                aria-hidden="true"
+                id="ctrlIcon"
+                onclick="playPause()"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa fa-forward"
+                aria-hidden="true"
+                onclick="changeSongNext()"
+              ></i>
+            </div>
+          </div>
+
+          <audio controls id="song" hidden>
+            <source src="/audios/INAAM.mp3" id="source" />
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- 9. To Do list ----------------------------------->
+
+    <div class="container">
+      <div class="box9">
+        <h2 style="color: white; margin: 15px" class="some-h2">9. Do List</h2>
+        <div class="do-list">
+          <div class="input-my-task">
+            <input type="text" placeholder="text" id="task-input" />
+            <button onclick="addTask()">Add</button>
+          </div>
+          <ul class="tasks" id="tasks"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- 10. Random password geenrator ---------------------------->
+    <div class="container">
+      <div class="box10">
+        <h2 style="color: white" class="some-h2">
+          10. Random Password Generateor
+        </h2>
+        <div class="pass-generator">
+          <div>
+            <input
+              type="text"
+              placeholder="Enter password  length"
+              id="length-input"
+            />
+            <button
+              type="submit"
+              class="generate-btn"
+              onclick="generatePassword()"
+            >
+              Generate
+            </button>
+          </div>
+          <p id="your-password"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- 11. Weather Api ---------------------------->
+
+    <div class="container">
+      <div id="box10" class="box11">
+        <h2 style="margin: 0">11. Weather API</h2>
+        <div class="weather-box">
+          <div class="input-and-ok">
+            <input
+              id="city-input"
+              value="Mathura"
+              type="text"
+              placeholder="Enter city name"
+            />
+            <button class="ok-btn" type="ok" onclick="getCity()">Ok</button>
+          </div>
+          <img id="weather-image" src="/images/clear.png" />
+          <p class="temp">10°C</p>
+          <p class="city">City</p>
+
+          <div class="hum-wind">
+            <p class="p">
+              <span class="humidity">10%</span>
+              <br />
+              Humadity
+            </p>
+            <p class="p">
+              <span class="wind">10km/h</span>
+              <br />
+              Wind speed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- 11. Quiz game ---------------------------->
+    <div class="container">
+      <div class="box12">
+        <h2 style="margin: 0">12. Quiz Game</h2>
+        <h3><a href="quiz-game.html">Click here to play</a></h3>
+      </div>
+    </div>
+
+    <!--------------------------- script tag -------------------------------------->
+    <div class="temp-box" style="height: 200px; width: 100%"></div>
+
+    <script src="/script/mywork.js"></script>
+    <script src="/script/search-filter.js"></script>
+    <script src="/script/music-player.js"></script>
+    <script src="/script/do-list.js"></script>
+    <script src="/script/weather_api.js"></script>
+  </body>
+</html>
